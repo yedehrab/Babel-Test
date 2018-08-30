@@ -32,12 +32,12 @@ npm init
 ### Gerekli dosya ve klasörleri oluşturma
 
 ```CMD
-mkdir dağıtım && babel index.js -s -d dağıtım
+mkdir dağıtım & babel index.js -s -d dağıtım
 ```
 > **(İsteğe Bağlı)** Bu kod ile çıktılar "dağıtım" adlı klasöre kaydedilir. 
 
 ```CMD
-mkdir komutlar && @echo require("babel-register") > komutlar/derleme && @echo require("./../index.js") >> komutlar/derleme
+mkdir komutlar & @echo require("babel-register") > komutlar/derleme && @echo require("./../index.js") >> komutlar/derleme
 ```
 
 > "komutlar" isminde klasör açıp içine "derleme" dosyası açıyoruz
