@@ -15,14 +15,14 @@ npm install -g babel-cli babel-register
 npm init
 ```
 
-> Bu işlem oluşturulması istenen dizinde yapılmalalı
+> Bu işlem oluşturulması istenen dizinde yapılmalıdır.
 
 ### Node için babel modülleri oluşturma
 
  ```CMD
  npm install babel-preset-env --save-dev
  ```
-> Bu işlem oluşturulması istenen dizinde yapılmalalı
+> Bu işlem oluşturulması istenen dizinde yapılmalıdır.
 
 ```CMD
 @echo { "presets": [ "env" ] } > .babelrc
