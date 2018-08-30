@@ -1,3 +1,4 @@
+### Gerekli paketlerin kurulumu
 
 ```CMD
 npm install -g babel-cli babel-register
@@ -8,22 +9,27 @@ npm install -g babel-cli babel-register
 > * babel-cli: Konsoldan "babel" komutlarına izin verir.
 > * babel-register: npm üzerinden require ile babel modüllerine erişimi sağlar.
 > ---
+### Package.json dosyası oluşturma
 
 ```CMD
 npm init
 ```
-> node için package.json oluşturur. (dizine)
+
+> Bu işlem oluşturulması istenen dizinde yapılmalalı
+
+### Node için babel modülleri oluşturma
 
  ```CMD
  npm install babel-preset-env --save-dev
  ```
-> node modüllerini oluşturur. (dizine)
+> Bu işlem oluşturulması istenen dizinde yapılmalalı
 
 ```CMD
 @echo { "presets": [ "env" ] } > .babelrc
 ```
 > Babelrc dosyası oluşturur. 
 
+### Gerekli dosya ve klasörleri oluşturma
 
 ```CMD
 mkdir dağıtım && babel index.js -s -d dağıtım
@@ -38,6 +44,8 @@ mkdir komutlar && @echo require("babel-register") > komutlar/derleme && @echo re
 
 > Not: Bu kısımdaki "komutlar/derleme" ile diğer adımdaki işlem yapılmaktadır.
 
+### Son adım "package.json" düzenleme
+
 ```JSON
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -48,6 +56,8 @@ mkdir komutlar && @echo require("babel-register") > komutlar/derleme && @echo re
   }
 ```
 > package.json dosyası içindeki script kısmı yerine bunlar yazılır. ("dağıtım" örnek amaçlı klasör ismidir.) (win10)
+
+### Derleme işlemi
 
 ```NPM
 npm run start
