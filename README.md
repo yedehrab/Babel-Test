@@ -1,4 +1,3 @@
-# Babel-Test
 
 ```CMD
 npm install -g babel-cli babel-register
@@ -20,18 +19,10 @@ npm init
  ```
 > node modüllerini oluşturur. (dizine)
 
-```code .babelrc```
-> Babelrc dosyası oluşturur.
-
-```JSON
-{
-    "presets": [
-        "env"
-    ]
-}
+```CMD
+@echo { "presets": [ "env" ] } > .babelrc
 ```
-
-> Üstteki kısım oluşturulan dosyanın **(.babelrc)** içine yazılır. 
+> Babelrc dosyası oluşturur. 
 
 
 ```CMD
