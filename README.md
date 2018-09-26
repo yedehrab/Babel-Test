@@ -57,6 +57,11 @@ mkdir komutlar & @echo require("babel-register") > komutlar/derleme && @echo req
 ```
 > package.json dosyası içindeki script kısmı yerine bunlar yazılır. ("dağıtım" örnek amaçlı klasör ismidir.) (win10)
 
+### Hata 
+
+> babel-register not found
+Bu hata durumunda node_modules adlı klasörü projenize kopyalayın.
+
 ### Derleme işlemi
 
 ```NPM
