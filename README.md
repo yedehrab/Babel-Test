@@ -37,7 +37,7 @@ mkdir dist & babel index.js -s -d dist
 > **(İsteğe Bağlı)** Bu kod ile çıktılar "dist" adlı klasöre kaydedilir. 
 
 ```CMD
-mkdir bin & @echo require("babel-register") > bin/dev && @echo require("./../indeks.js") >> komutlar/derleme
+mkdir bin & @echo require("babel-register") > bin/dev && @echo require("./../index.js") >> bin/dev
 ```
 
 > "bin" isminde klasör açıp içine "dev" dosyası açıyoruz
