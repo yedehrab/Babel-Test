@@ -1,23 +1,24 @@
 ### Gerekli paketlerin kurulumu
 
 ```CMD
-npm install babel-cli babel-register babel-preset-env --save-dev
+npm install - g babel-cli 
+npm install babel-register babel-preset-env --save-dev
 ```
 
 > ---
 > Global olarak babel consol komutlarını ve işleyicisini ekler.
-> * babel-cli: Konsoldan "babel" ile başlayan komutlara izin verir.
+> * babel-cli: Konsoldan "babel" ile başlayan komutlara izin verir. (Global olarak kurulması gerekmekte)
 > * babel-register: NPM üzerinden require ile babel modüllerine erişimi sağlar.
 > * babel-preset-env: ES5'i derlemek için kullanılır.
 > ---
-
-> Bu işlem oluşturulması istenen dizinde yapılmalıdır.
 
 ### Babel yapılandırma dosyasını oluşturma
 
 ```CMD
 @echo {"presets":[["env",{"targets":{"edge":"17","firefox":"60","chrome":"67","safari":"11.1","node":"current"}}]]} > .babelrc
 ```
+
+>  **Bu işlem oluşturulması istenen dizinde yapılmalıdır.**
 > Babelrc dosyası belli ayarlarla oluşturur. Targets kısmı silinebilir. (Hedeflenen tarayıcıyı ifade etmektedir.) 
 
 ### Gerekli dosya ve klasörleri oluşturma (Windows)
