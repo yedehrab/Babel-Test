@@ -13,9 +13,7 @@ npm install babel-register babel-preset-env --save-dev
 > ---
 
 
----
- **Bu adım ve sonrasındaki işlemler projenin (index.js) dizininde yapılmalıdır.**
- ---
+#### Bu adım ve sonrasındaki işlemler projenin (index.js) dizininde yapılmalıdır
 
 ### Babel yapılandırma dosyasını oluşturma
 
