@@ -12,14 +12,16 @@ npm install babel-register babel-preset-env --save-dev
 > * babel-preset-env: ES5'i derlemek için kullanılır.
 > ---
 
+
+---
+ **Bu adım ve sonrasındaki işlemler projenin (index.js) dizininde yapılmalıdır.**
+ ---
+
 ### Babel yapılandırma dosyasını oluşturma
 
 ```CMD
 @echo {"presets":[["env",{"targets":{"edge":"17","firefox":"60","chrome":"67","safari":"11.1","node":"current"}}]]} > .babelrc
 ```
-
->  **Bu işlem oluşturulması istenen dizinde yapılmalıdır.**
-
 > Babelrc dosyası belli ayarlarla oluşturur. Targets kısmı silinebilir. (Hedeflenen tarayıcıyı ifade etmektedir.) 
 
 ### Gerekli dosya ve klasörleri oluşturma (Windows)
