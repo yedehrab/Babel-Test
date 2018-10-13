@@ -19,6 +19,7 @@ npm install babel-register babel-preset-env --save-dev
 ```
 
 >  **Bu işlem oluşturulması istenen dizinde yapılmalıdır.**
+
 > Babelrc dosyası belli ayarlarla oluşturur. Targets kısmı silinebilir. (Hedeflenen tarayıcıyı ifade etmektedir.) 
 
 ### Gerekli dosya ve klasörleri oluşturma (Windows)
