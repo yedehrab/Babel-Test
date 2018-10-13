@@ -1,33 +1,24 @@
 ### Gerekli paketlerin kurulumu
 
 ```CMD
-npm install -g babel-cli babel-register
+npm install babel-cli babel-register babel-preset-env --save-dev
 ```
 
 > ---
 > Global olarak babel consol komutlarını ve işleyicisini ekler.
-> * babel-cli: Konsoldan "babel" komutlarına izin verir.
-> * babel-register: npm üzerinden require ile babel modüllerine erişimi sağlar.
+> * babel-cli: Konsoldan "babel" ile başlayan komutlara izin verir.
+> * babel-register: NPM üzerinden require ile babel modüllerine erişimi sağlar.
+> * babel-preset-env: ES5'i derlemek için kullanılır.
 > ---
-### Package.json dosyası oluşturma
-
-```CMD
-npm init
-```
 
 > Bu işlem oluşturulması istenen dizinde yapılmalıdır.
 
-### Node için babel modülleri oluşturma
-
- ```CMD
- npm install babel-preset-env --save-dev
- ```
-> Bu işlem oluşturulması istenen dizinde yapılmalıdır.
+### Babel yapılandırma dosyasını oluşturma
 
 ```CMD
-@echo { "presets": [ "env" ] } > .babelrc
+@echo {"presets":[["env",{"targets":{"edge":"17","firefox":"60","chrome":"67","safari":"11.1","node":"current"}}]]} > .babelrc
 ```
-> Babelrc dosyası oluşturur. 
+> Babelrc dosyası belli ayarlarla oluşturur. Targets kısmı silinebilir. (Hedeflenen tarayıcıyı ifade etmektedir.) 
 
 ### Gerekli dosya ve klasörleri oluşturma (Windows)
 
@@ -44,6 +35,14 @@ mkdir bin & @echo require("babel-register") > bin/dev && @echo require("./../ind
 
 > Not: Bu kısımdaki "bin/dev" ile diğer adımdaki işlem yapılmaktadır.
 
+### Package.json dosyası oluşturma
+
+```CMD
+npm init
+```
+
+> Bu işlem oluşturulması istenen dizinde yapılmalıdır.
+
 ### Son adım "package.json" düzenleme
 
 ```JSON
@@ -56,12 +55,6 @@ mkdir bin & @echo require("babel-register") > bin/dev && @echo require("./../ind
   }
 ```
 > package.json dosyası içindeki script kısmı yerine bunlar yazılır. ("dist" örnek amaçlı klasör ismidir.) (win10)
-
-### Hata 
-
-**babel-register not found**
-
-> Bu hata durumunda node_modules adlı klasörü projenize kopyalayın.
 
 ### Derleme işlemi
 
