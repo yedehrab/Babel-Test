@@ -29,33 +29,33 @@ npm init
 ```
 > Babelrc dosyası oluşturur. 
 
-### Gerekli dosya ve klasörleri oluşturma
+### Gerekli dosya ve klasörleri oluşturma (Windows)
 
 ```CMD
-mkdir dağıtım & babel indeks.js -s -d dağıtım
+mkdir dist & babel index.js -s -d dist
 ```
-> **(İsteğe Bağlı)** Bu kod ile çıktılar "dağıtım" adlı klasöre kaydedilir. 
+> **(İsteğe Bağlı)** Bu kod ile çıktılar "dist" adlı klasöre kaydedilir. 
 
 ```CMD
-mkdir komutlar & @echo require("babel-register") > komutlar/derleme && @echo require("./../indeks.js") >> komutlar/derleme
+mkdir bin & @echo require("babel-register") > bin/dev && @echo require("./../indeks.js") >> komutlar/derleme
 ```
 
-> "komutlar" isminde klasör açıp içine "derleme" dosyası açıyoruz
+> "bin" isminde klasör açıp içine "dev" dosyası açıyoruz
 
-> Not: Bu kısımdaki "komutlar/derleme" ile diğer adımdaki işlem yapılmaktadır.
+> Not: Bu kısımdaki "bin/dev" ile diğer adımdaki işlem yapılmaktadır.
 
 ### Son adım "package.json" düzenleme
 
 ```JSON
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node komutlar/derleme",
-    "build": "mkdir dağıtım & babel index.js -s -d dağıtım",
-    "clean": "rd /s /q dağıtım",
+    "start": "node bin/dev",
+    "build": "mkdir dist & babel index.js -s -d dist",
+    "clean": "rd /s /q dist",
     "rebuild": "npm run clean & npm run build"
   }
 ```
-> package.json dosyası içindeki script kısmı yerine bunlar yazılır. ("dağıtım" örnek amaçlı klasör ismidir.) (win10)
+> package.json dosyası içindeki script kısmı yerine bunlar yazılır. ("dist" örnek amaçlı klasör ismidir.) (win10)
 
 ### Hata 
 
