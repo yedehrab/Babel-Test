@@ -1,0 +1,1 @@
+{"version":3,"sources":["../index.js"],"names":["test","console","log"],"mappings":";;AAAA,MAAMA,OAAQA,IAAD,IAAU;AACnBC,YAAQC,GAAR,CAAYF,IAAZ,EAAkB,OAAlB;AACH,CAFD;;AAIAA,KAAK,GAAL","file":"index.js","sourcesContent":["const test = (test) => {\r\n    console.log(test, \"Hello\");\r\n}\r\n\r\ntest(\"a\");\r\n"]}

@@ -1,21 +1,27 @@
 {
-  "name": "babel-test",
+  "name": "node.js-babel-setup",
   "version": "1.0.0",
-  "description": "",
+  "description": "```CMD\r npm install -g babel-cli \r npm install babel-register babel-preset-env --save-dev\r ```",
   "main": "index.js",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node komutlar/derleme",
-    "build": "mkdir dağıtım & babel index.js -s -d dağıtım",
-    "clean": "rd /s /q dağıtım",
+    "start": "node bin/dev",
+    "build": "mkdir dist & babel index.js -s -d dist",
+    "clean": "rd /s /q dist",
     "rebuild": "npm run clean & npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yedehrab/Node.js-Babel-Setup.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "babel-preset-env": "^1.7.0"
+  "bugs": {
+    "url": "https://github.com/yedehrab/Node.js-Babel-Setup/issues"
   },
-  "dependencies": {
-    "babel-register": "^6.26.0"
-  }
+  "homepage": "https://github.com/yedehrab/Node.js-Babel-Setup#readme"
 }

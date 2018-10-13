@@ -1,1 +1,0 @@
-{"version":3,"sources":["../index.js"],"names":["test","console","log"],"mappings":";;AAAA,IAAMA,OAAO,cAACA,KAAD,EAAU;AACnBC,YAAQC,GAAR,CAAYF,KAAZ,EAAkB,OAAlB;AACH,CAFD;;AAIAA,KAAK,GAAL","file":"index.js","sourcesContent":["const test = (test) => {\r\n    console.log(test, \"sello\");\r\n}\r\n\r\ntest(\"a\");"]}

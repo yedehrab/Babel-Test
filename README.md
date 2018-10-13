@@ -1,7 +1,7 @@
 ### Gerekli paketlerin kurulumu
 
 ```CMD
-npm install - g babel-cli 
+npm install -g babel-cli 
 npm install babel-register babel-preset-env --save-dev
 ```
 
