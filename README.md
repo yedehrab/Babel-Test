@@ -30,12 +30,12 @@ mkdir dist & babel index.js -s -d dist
 > **(İsteğe Bağlı)** Bu kod ile çıktılar "dist" adlı klasöre kaydedilir. 
 
 ```CMD
-mkdir bin & @echo require("babel-register") > bin/dev && @echo require("./../index.js") >> bin/dev
+mkdir tools & @echo require("babel-register") > tools/dev && @echo require("./../index.js") >> tools/dev
 ```
 
-> "bin" isminde klasör açıp içine "dev" dosyası açıyoruz
+> "tools" isminde klasör açıp içine "dev" dosyası açıyoruz
 
-> Not: Bu kısımdaki "bin/dev" ile diğer adımdaki işlem yapılmaktadır.
+> Not: Bu kısımdaki "tools/dev" ile diğer adımdaki işlem yapılmaktadır.
 
 ### Package.json dosyası oluşturma
 
@@ -50,7 +50,7 @@ npm init
 ```JSON
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/dev",
+    "start": "node tools/dev",
     "build": "mkdir dist & babel index.js -s -d dist",
     "clean": "rd /s /q dist",
     "rebuild": "npm run clean & npm run build"
