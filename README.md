@@ -64,3 +64,6 @@ npm init
 npm run start
 ```
 > Bu komut ile, package.json'daki start scriptimiş çalışmış oluyor. Yani program derlenmiş oluyor.
+
+### Yazar
+Yunus Emre ~ [yedehrab](https://github.com/yedehrab)
