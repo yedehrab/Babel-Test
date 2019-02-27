@@ -1,6 +1,6 @@
 # Nodejs Babel Kurulumu <!-- omit in toc -->
 
-> Babel es6 kodlama formatını tarayıcılarda kullanabilmemizi sağlar
+Babel, es6 kodlama formatını tarayıcılarda kullanabilmemizi sağlar
 
 ## İçerikler <!-- omit in toc -->
 
