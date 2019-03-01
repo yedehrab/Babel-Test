@@ -100,4 +100,7 @@ npm run-script [script]
 
 ## Yazar
 
-Yunus Emre ~ [yedehrab](https://github.com/yedehrab)
+Yunus Emre
+
+- [Github](https://github.com/yedehrab)
+- [Gitlab](https://gitlab.com/yedehrab)
